@@ -1,18 +1,19 @@
 import javax.swing.*;
+
 import java.util.Random;
 
-public class NumberGuess {
+public class Task2{
     public static void main(String[] args) {
         Random a=new Random();
         int Guess=0,score=0;
         Output x=new Output();
         JOptionPane.showMessageDialog(null,"\tHow to Score?\nCorrect guess in 1st attempt gives 10 POINTS and will decrease\nas number of attempts increases,in 10th attempt will get 1 POINT.\nIf not guessed correctly no POINTS wil be given.");
-        for(int round=1;round<4;round++)
+        for(int round=1;round<3;round++)
         {
             int random=a.nextInt(1, 100);
             for(int attempt=1;attempt<10;attempt++)
             {
-                String input=JOptionPane.showInputDialog("Guess an Integer number between 1 to 100.");
+                String input=JOptionPane.showInputDialog("Round:  "+round+"\nGuess an Integer number between 1 to 100.");
                 try{
                     Guess=Integer.parseInt(input);
                 }
