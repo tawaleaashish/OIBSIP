@@ -11,11 +11,18 @@ public class Task2{
         for(int round=1;round<3;round++)
         {
             int random=a.nextInt(1, 100);
-            for(int attempt=1;attempt<10;attempt++)
+            for(int attempt=1;attempt<11;attempt++)
             {
-                String input=JOptionPane.showInputDialog("Round:  "+round+"\nGuess an Integer number between 1 to 100.");
                 try{
-                    Guess=Integer.parseInt(input);
+                    String input=JOptionPane.showInputDialog("Round:  "+round+"\nGuess an Integer number between 1 to 100.");
+                    if(input==null)
+                    {
+                        System.exit(0);
+                    }
+                    else
+                    {
+                        Guess=Integer.parseInt(input);
+                    }
                 }
                 catch(NumberFormatException e){
                     JOptionPane.showMessageDialog(null,"Entered Input is Invalid,Try again.");
