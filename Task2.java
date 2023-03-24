@@ -7,7 +7,7 @@ public class Task2{
         Random a=new Random();
         int Guess=0,score=0;
         Output x=new Output();
-        JOptionPane.showMessageDialog(null,"\tHow to Score?\nCorrect guess in 1st attempt gives 10 POINTS and will decrease\nas number of attempts increases,in 10th attempt will get 1 POINT.\nIf not guessed correctly no POINTS wil be given.\n(There will be 2 rounds)");
+        JOptionPane.showMessageDialog(null,"\tHow to Score?\nCorrect guess in 1st attempt gives 10 POINTS and will decrease\nas number of attempts increases,in 10th attempt will get 1 POINT.\nIf not guessed correctly NO POINTS wil be allotted.\n(There will be 2 rounds)");
         for(int round=1;round<3;round++)
         {
             int random=a.nextInt(1, 100);
