@@ -2,7 +2,7 @@ import javax.swing.*;
 
 import java.util.Random;
 
-public class Task2{
+public class oibsip_task2{
     public static void main(String[] args) {
         Random a=new Random();
         int Guess=0,score=0;

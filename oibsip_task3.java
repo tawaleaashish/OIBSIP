@@ -88,7 +88,7 @@ class UserData{
         }
     }
 }
-public class Task3 {
+public class oibsip_task3 {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         UserData data=new UserData();
